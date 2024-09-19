@@ -1,4 +1,4 @@
-a = open('24.txt').readline()
+a = open('23.txt').readline()
 b = 1
 res = 0
 for i in range(0, len(a)-1):
