@@ -1,9 +1,12 @@
-def f(x, y):
-    if x == y:
-        return 1
-    if x > y:
-        return 0
-    return f(x + 1, y) + f(x + 2, y) + f(x + 3, y)
+a = open('24.txt').readline()
+b = 1
+res = 0
+for i in range(0, len(a)-1):
+    if a[i] not in 'ABC' or a[i+1] not in 'ABC':
+        b += 1
+    else:
+        res = max(res, b)
+        b = 1
 
 
-print(f(21, 30))
+print(res)
