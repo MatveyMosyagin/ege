@@ -7,5 +7,5 @@ for a in range(1000, 10000):
     c.append(str(int(a[2]) + int(a[3])))
     d = c.sort(reverse=True)
     if (c[1] + c[0]) == '1315':
-        print(a)
-        break
+        res.append(a)
+print(max(res))
