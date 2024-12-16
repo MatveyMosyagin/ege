@@ -1,7 +1,13 @@
-print('x y w z')
-for x in range(0, 2):
-    for y in range(0, 2):
-        for w in range(0, 2):
-            for z in range(0, 2):
-                if (w or not(x)) and (w != y) and (w <= z):
-                    print(x, y, w, z)
+from itertools import *
+
+def f(x, y, z, w):
+    return (x <= (y == w)) and (y == (w <= z))
+
+
+for a1, a2 in product([0, 1], repeat=2):
+    tab = [(1, a1, 0, 1), (0, 0, a2, 0), (0, 0, 0, 1)]
+    if len(tab) == len(set(tab)):
+        for p in permutations('xyzw'):
+            if [f(**dict(zip(p, r))) for r in tab] == [1, 1, 0]:
+                print(p)
+
