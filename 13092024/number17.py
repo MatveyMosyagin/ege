@@ -1,10 +1,14 @@
 a = open('17.txt')
-x = y = z = 0
 b = [int(i) for i in a]
+mina = 9999
+maxa = 0
+count = 0
 for j in range(len(b) - 1):
-    for k in range(j + 1, len(b)):
-        if min(j, k) % 10 == 5 and (j**2 + k**2) < max(y, min(b[j], b[k])):
-            x += 1
-            z = max(z, k**2 + j**2)
+    if int(str(b[j])[-1]) == 5:
+        mina = min(mina, b[j])
+for k in range(len(b) - 1):
+    if str(min(b[k], b[k + 1]))[-1] == '5' and b[k] ** 2 + b[k + 1] ** 2 < mina ** 2:
+        maxa = max(maxa, b[k] ** 2 + b[k + 1] ** 2)
+        count += 1
+print(count, maxa)
 
-print(x, z)
