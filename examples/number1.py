@@ -8,4 +8,4 @@ for p in permutations(s):
     for i, v in enumerate(p):
         nt = nt.replace(str(i+1), v)
         if set(g.split()) == set(nt.split()):
-            print(p)
+            print(*p)
