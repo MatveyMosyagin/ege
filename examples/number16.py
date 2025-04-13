@@ -1,6 +1,4 @@
 from functools import *
-from  sys import *
-setrecursionlimit(10000)
 @lru_cache(None)
 
 
@@ -34,12 +32,14 @@ setrecursionlimit(10000)
 
 
 #Алгоритмы, опирающиеся на одно предыдущее значение
-def F(n):
-    if n == 1:
-        return 1
-    if n > 1:
-        return F(n-1) * n
-print(F(5))
+# def F(n):
+#     if n == 1:
+#         return 1
+#     if n > 1:
+#         return F(n-1) * n
+# print(F(5))
+
+
 
 
 

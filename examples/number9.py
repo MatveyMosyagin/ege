@@ -23,4 +23,3 @@ for i in a:
     if len(zametchet) > len(zametnechet) and sum(chet) < sum(nechet):
         count += 1
 print(count)
-

@@ -1,7 +1,7 @@
 #Побитовая коньюкция
-# for a in range(0, 10**5):
+# for a in range(0, 1000):
 #     k = True
-#     for x in range(0, 10**5):
+#     for x in range(0, 1000):
 #         if ((x & 20777 != 0) <= ((x & 12332 == 0) <= (x & a != 0))) == 0:
 #             k = False
 #             break
@@ -58,22 +58,44 @@
 #         print(a)
 
 #Разное
-def F(a, b, c):
-    if ((a + b) > c) and ((a + c) > b) and ((c + b) > a):
-        return 1
-    else:
-        return 0
+# def F(a, b, c):
+#     if ((a + b) > c) and ((a + c) > b) and ((c + b) > a):
+#         return 1
+#     else:
+#         return 0
+#
+#
+# for a in range(150, 0, -1):
+#     k = 0
+#     for x in range(1, 1501):
+#         if not ((F(x, 10, 20) == (not (max(x, 8) > 24))) and F(3, a, x)):
+#             k += 1
+#         else:
+#             break
+#     if k == 1500:
+#         print(a)
+#         break
 
 
-for a in range(150, 0, -1):
-    k = 0
-    for x in range(1, 1501):
-        if not ((F(x, 10, 20) == (not (max(x, 8) > 24))) and F(3, a, x)):
-            k += 1
-        else:
-            break
-    if k == 1500:
-        print(a)
-        break
+#Координатка_Наибольшая длина
+# def f(x, a):
+#     return ((x in a) <= (x ** 2 <= 81)) and ((x ** 2 <= 36) <= (x in a))
+#
+#
+# a = set([i for i in range(-1000, 1000)])
+# for x in range(-1000, 1000):
+#     if not f(x, a):
+#         a.remove(x)
+# print(len(a) - 1)
 
 
+#Координатка_Наименьшая длина
+# def f(x,a):
+#     return ((x in a) <= (x**2 <= 81)) and ((x**2 <= 36) <= (x in a))
+#
+#
+# a = set()
+# for x in range(-1000, 1000):
+#     if not f(x, a):
+#         a.add(x)
+# print(len(a) - 1)
