@@ -1,5 +1,7 @@
-from functools import *
-@lru_cache(None)
+import sys
+# from functools import *
+# @lru_cache(None)
+sys.setrecursionlimit(10**6)
 
 
 #Рекурсивные функции с возвращаемыми значениями

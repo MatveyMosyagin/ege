@@ -10,8 +10,8 @@
 #         break
 
 #Числовые отрезки(наибольшая длина)
-# P = [i for i in range(25, 51)]
-# Q = [i for i in range(32, 48)]
+# P = [i for i in range(15, 143)]
+# Q = [i for i in range(38, 167)]
 # m = 0
 # for Amin in range(0, 100):
 #     for Amax in range(Amin + 1, 100):
@@ -30,8 +30,8 @@
 
 #Числовые отрезки(наименьшая длина)
 # list = []
-# P = [i for i in range(15, 41)]
-# Q = [i for i in range(21, 64)]
+# P = [i for i in range(15, 143)]
+# Q = [i for i in range(38, 167)]
 # for Amin in range(0, 100):
 #     for Amax in range(Amin + 1, 100):
 #         check = 1
